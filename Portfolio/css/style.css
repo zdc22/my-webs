@@ -1,0 +1,319 @@
+/* GLOBALES */
+:root {
+  --colorblanco: #fff;
+  --coloroscuro: #0b090a;
+  --colorclaro: #161a1d;
+  --colordetalles: #f9004d;
+  --colorparrafos: #06d6a0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+  color: var(--colorblanco);
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+  font-size: 2rem;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--colorblanco);
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  color: var(--colorparrafos);
+}
+
+/* UTILIDADES */
+
+.bold {
+  font-weight: bold;
+}
+
+.change-color {
+  color: var(--colordetalles);
+}
+
+.btn {
+  background-color: var(--colordetalles);
+  border-radius: 3rem;
+  padding: 1rem 1.5rem;
+}
+
+.no-m {
+  margin: 0;
+}
+
+.no-p {
+  padding: 0;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* HEADER */
+.hero {
+  background-image: url(/img/background.jpg);
+  height: 70rem;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  padding: 0 0.5rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+
+  .nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav__li {
+    display: inline;
+    padding: 0rem 1rem;
+  }
+
+  .nav__li a:hover {
+    color: var(--colordetalles);
+    transition: .4s;
+  }
+
+  .btn--desk {
+    font-weight: bold;
+    transition: transform .4s;
+  }
+
+  .btn--desk:hover {
+    transform: scale(1.2);
+  }
+}
+
+.content {
+  text-align: center;
+}
+
+.content__index {
+  color: var(--colorparrafos);
+}
+
+.news__form {
+  max-width: 100%;
+  position: relative;
+}
+
+.news__email {
+  display: inline-block;
+  width: 100%;
+  padding: 1.4rem 13rem 1.4rem 1.5rem;
+  border: .2rem solid var(--colordetalles);
+  border-radius: 3rem;
+}
+
+.news__btn {
+  position: absolute;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background-color: var(--colordetalles);
+  color: var(--colorblanco);
+  box-shadow: 0 0 .5rem var(--coloroscuro), 0 0 1.5rem var(--colordetalles);
+  right: .6rem;
+  top: .6rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .content {
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .news {
+    max-width: 40%;
+  }
+}
+
+/* ABOUT */
+.about {
+  background-color: var(--colorclaro);
+  height: 100%;
+  padding: 10rem 1rem;
+}
+
+.about__svg {
+  object-fit: cover;
+  object-position: left center;
+  height: 100%;
+}
+
+.about__text {
+  margin-bottom: 1rem;
+}
+
+.about__text::first-letter {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.about__btn {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .about {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .about__btn {
+    display: inline;
+    transition: .4s;
+  }
+
+  .about__btn:hover {
+    background-color: transparent;
+    border: .1rem solid var(--colordetalles);
+  }
+
+  .nucba {
+    transition: .2s;
+  }
+
+  .nucba:hover {
+    border-bottom: .1rem solid var(--colorparrafos);
+  }
+}
+
+/* SERVICES */
+
+.service {
+  background-color: var(--coloroscuro);
+  padding: 10rem 1rem;
+}
+
+.service__item {
+  background-color: var(--colorclaro);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  padding: 5rem 1rem;
+}
+
+.service__last {
+  background-color: var(--colorclaro);
+}
+
+.service__item p {
+  text-align: center;
+}
+
+.service__item i {
+  display: block;
+  text-align: center;
+  font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+  .service__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .service__item {
+    width: 30rem;
+  }
+}
+
+/* HIRE */
+
+.hire {
+  background-color: var(--colorclaro);
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  border-top: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hire {
+    grid-template-columns: 5fr 1fr;
+  }
+}
+
+/* FOOT */
+
+.foot {
+  background-color: var(--coloroscuro);
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot i {
+  font-size: 4rem;
+  padding: 0 1rem;
+}
