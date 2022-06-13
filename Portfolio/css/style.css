@@ -158,11 +158,16 @@ p {
 .form__input {
   display: inline-block;
   width: 100%;
+  outline: none;
   border-radius: 1rem;
-  padding: 1.4rem 13rem 1.4rem 1.5rem;
+  padding: 1rem 13rem 1rem 1.5rem;
   background-color: transparent;
   border: .2rem solid var(--colordetalles);
   color: var(--colorblanco);
+}
+
+.form__input:focus {
+  border: var(--colorparrafos);
 }
 
 
@@ -174,6 +179,7 @@ p {
   top: .3rem;
   display: inline-block;
   box-shadow: 0 0 0.5rem var(--coloroscuro), 0 0 1.5rem var(--colordetalles);
+  cursor: pointer;
 }
 
 /* ABOUT */
@@ -285,7 +291,7 @@ p {
 }
 
 .services__i--foot:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 @media (max-width: 880px) {
