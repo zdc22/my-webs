@@ -1,9 +1,14 @@
 :root {
-  --blanco: #ffffff;
+  --degrade: background: #0f0c29;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   --oscuro: #212121;
   --primario: #ffc107;
-  --secundario: #0097a7;
-  --gris: #757575;
+  --secundario: #0f0c29;
+  --gris: #75757530;
   --grisclaro: #dfe9f3;
 }
 
@@ -13,6 +18,7 @@ html {
   box-sizing: border-box;
   scroll-snap-type: y mandatory;
 }
+
 *,
 *:before,
 *:after {
@@ -20,13 +26,18 @@ html {
 }
 
 body {
-  font-size: 16px; /* 1 rem = 10px */
+  font-size: 16px;
+  /* 1 rem = 10px */
   font-family: "Krub", sans-serif;
-  background-image: linear-gradient(
-    to top,
-    var(--grisclaro) 0%,
-    var(--blanco) 100%
-  );
+  background-image: linear-gradient(to top,
+      var(--grisclaro) 0%,
+      var(--degrade) 100%);
+  color: var(--grisclaro);
+}
+
+a {
+  color: var(--grisclaro);
+  text-decoration: none;
 }
 
 .contenedor {
@@ -53,6 +64,7 @@ body {
   text-align: center;
   border: none;
 }
+
 @media (min-width: 768px) {
   .boton {
     width: auto;
@@ -71,9 +83,11 @@ h1 {
 h2 {
   font-size: 2.8rem;
 }
+
 h3 {
   font-size: 1.8rem;
 }
+
 h1,
 h2,
 h3 {
@@ -105,6 +119,7 @@ h3 {
 .nav-bg {
   background-color: var(--secundario);
 }
+
 .navegacion-principal {
   display: flex;
   flex-direction: column;
@@ -131,6 +146,7 @@ h3 {
   background-color: var(--primario);
   color: var(--oscuro);
 }
+
 /* HERO */
 .hero {
   background-image: url(../img/hero.jpg);
@@ -140,6 +156,7 @@ h3 {
   height: 45rem;
   margin-bottom: 2rem;
 }
+
 .contenido-hero {
   position: absolute;
   width: 100%;
@@ -180,7 +197,6 @@ h3 {
 }
 
 .servicio h3 {
-  color: var(--secundario);
   font-weight: normal;
 }
 
@@ -202,7 +218,8 @@ h3 {
 /* CONTACTO */
 .formulario {
   background-color: var(--gris);
-  width: min(60rem, 100%); /* Utilizar el valor más pequeño */
+  width: min(60rem, 100%);
+  /* Utilizar el valor más pequeño */
   margin: 0 auto;
   padding: 2rem;
   border-radius: 1rem;
