@@ -1,0 +1,24 @@
+{
+  "name": "meeti",
+  "version": "1.0.0",
+  "description": "Aprendiendo BS-5 y SASS",
+  "main": "index.js",
+  "scripts": {
+    "compilar:sass": "sass --watch src/scss:build/css",
+    "build:sass": "purgecss -css build/css/style.css -con index.html -o build/css/meeti.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zdc22/my-webs.git"
+  },
+  "author": "Gastón Díaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zdc22/my-webs/issues"
+  },
+  "homepage": "https://github.com/zdc22/my-webs#readme",
+  "devDependencies": {
+    "bootstrap": "^5.1.3",
+    "sass": "^1.53.0"
+  }
+}
