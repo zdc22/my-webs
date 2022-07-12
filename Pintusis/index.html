@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pintusis</title>
+    <!-- G FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,200;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="menu-btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <nav class="navegacion">
+      <ul class="nav">
+        <li><a href="index.html" class="texto-sec">Pintusis</a></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="cuenta.html">Cuenta</a></li>
+        <button class="switch" id="switch">
+          <span><i class="fa-solid fa-sun"></i></span>
+          <span><i class="fa-solid fa-moon"></i></span>
+        </button>
+      </ul>
+    </nav>
+    <header id="inicio" class="hero-content hero">
+      <h1>Pintusis</h1>
+      <p class="hero-bg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptate
+        fugiat libero expedita nemo odio harum, provident molestiae! Pariatur
+        odit accusantium aspernatur maxime? Dolor soluta perspiciatis pariatur
+        asperiores, doloribus deleniti?
+      </p>
+    </header>
+    <main id="productos" class="productos">
+      <h2>Productos</h2>
+      <div class="cards container">
+        <div class="card">
+          <h3>Cuadros</h3>
+          <img src="/img/card1.jpg" alt="Imagen producto" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="precio-flex">
+            <p class="texto-tachado">$30</p>
+            <p><span class="texto-sec precio-oferta">$15</span></p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Graffiti</h3>
+          <img src="/img/card2.jpg" alt="Imagen producto" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="precio-flex">
+            <p class="texto-tachado">$30</p>
+            <p><span class="texto-sec precio-oferta">$15</span></p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Dibujo</h3>
+          <img src="img/card3.jpg" alt="Imagen producto" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="precio-flex">
+            <p class="texto-tachado">$30</p>
+            <p><span class="texto-sec precio-oferta">$15</span></p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Cosmetica</h3>
+          <img src="img/card4.jpg" alt="Imagen producto" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="precio-flex">
+            <p class="texto-tachado">$30</p>
+            <p><span class="texto-sec precio-oferta">$15</span></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section id="nosotros" class="nosotros">
+        <div>
+          <img
+            src="/img/Nosotros.jpg"
+            alt="Imagen sobre nosotros"
+            class="nosotros-img"
+          />
+        </div>
+        <div class="nosotros-content">
+          <h3>De artistas para artistas</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+            iure animi quae quisquam earum consequuntur nisi non adipisci!
+            Commodi, voluptates nobis? Sit, distinctio dicta quidem eius
+            architecto ipsam cumque enim.
+          </p>
+    </section>
+    <section id="contacto" class="contacto container">
+      <form class="formulario">
+          <h3>Contactanos</h3>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" placeholder="Ingrese su nombre">
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="correo@gmail.com">
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Dejanos un mensaje"></textarea>
+
+          <button class="boton" type="submit">Enviar</button>
+      </form>
+      <div>
+        <img src="/img/Formulario.svg" alt="Imagen de formulario" class="formulario-img">
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Todos los derechos reservados &copy; <span class="texto-sec">Pintusis</span></p>
+    </footer>
+    
+    <!-- SCROLL  REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- CUSTOM JS -->
+    <script src="/app.js"></script>
+  </body>
+</html>
