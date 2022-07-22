@@ -13,9 +13,12 @@
       rel="stylesheet"
     />
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
   </head>
   <body>
     <div class="menu-btn">
@@ -23,37 +26,51 @@
     </div>
     <nav class="navegacion">
       <ul class="nav">
-        <li><a href="index.html"><i class="fa-solid fa-p logo"></i></a></li>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-p logo"></i></a>
+        </li>
         <li><i class="fa-solid fa-house"></i><a href="#inicio">Inicio</a></li>
-        <li><i class="fa-solid fa-paint-roller"></i><a href="#productos">Productos</a></li>
-        <li><i class="fa-solid fa-users"></i><a href="#nosotros">Nosotros</a></li>
-        <li><i class="fa-solid fa-message"></i><a href="#contacto">Contacto</a></li>
-        <li><i class="fa-solid fa-address-book"></i><a href="cuenta.html">Cuenta</a></li>
+        <li>
+          <i class="fa-solid fa-paint-roller"></i
+          ><a href="#productos">Productos</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-users"></i><a href="#nosotros">Nosotros</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-message"></i><a href="#contacto">Contacto</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-address-book"></i
+          ><a href="cuenta.html">Cuenta</a>
+        </li>
         <button class="switch" id="switch">
           <span><i class="fa-solid fa-sun"></i></span>
           <span><i class="fa-solid fa-moon"></i></span>
         </button>
-        
       </ul>
     </nav>
     <header id="inicio" class="hero-content hero">
       <div class="container">
-        <h1> Viví tu <br> vida a color</h1>
+        <h1>
+          Viví tu <br />
+          vida a color
+        </h1>
         <p><span class="typed"></span><span class="pintusis">pintusis</span></p>
-      <p class="hero-bg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptate
-        fugiat libero expedita nemo odio harum, provident molestiae! Pariatur
-        odit accusantium aspernatur maxime? Dolor soluta perspiciatis
-      </p>
+        <p class="hero-bg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+          voluptate fugiat libero expedita nemo odio harum, provident molestiae!
+          Pariatur odit accusantium aspernatur maxime? Dolor soluta perspiciatis
+        </p>
       </div>
       <i class="fa-solid fa-arrow-down"></i>
     </header>
-    <main id="productos" class="productos">
+    <main id="productos" class="productos container">
       <h2>Productos</h2>
       <div class="cards">
         <div class="card">
           <h3>Cuadros</h3>
-          <img src="/img/card1.jpg" alt="Imagen producto" />
+          <img src="assets/img/card1.jpg" alt="Imagen producto" />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div class="precio-flex">
             <p class="texto-tachado">$30</p>
@@ -62,77 +79,88 @@
         </div>
         <div class="card">
           <h3>Graffiti</h3>
-          <img src="/img/card2.jpg" alt="Imagen producto" />
+          <img src="assets/img/card2.jpg" alt="Imagen producto" />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div class="precio-flex">
             <p class="texto-tachado">$30</p>
-            <p><span class=" precio-oferta">$15</span></p>
+            <p><span class="precio-oferta">$15</span></p>
           </div>
         </div>
         <div class="card">
           <h3>Dibujo</h3>
-          <img src="img/card3.jpg" alt="Imagen producto" />
+          <img src="assets/img/card3.jpg" alt="Imagen producto" />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div class="precio-flex">
             <p class="texto-tachado">$30</p>
-            <p><span class=" precio-oferta">$15</span></p>
+            <p><span class="precio-oferta">$15</span></p>
           </div>
         </div>
         <div class="card">
           <h3>Cosmetica</h3>
-          <img src="img/card4.jpg" alt="Imagen producto" />
+          <img src="assets/img/card4.jpg" alt="Imagen producto" />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div class="precio-flex">
             <p class="texto-tachado">$30</p>
-            <p><span class=" precio-oferta">$15</span></p>
+            <p><span class="precio-oferta">$15</span></p>
           </div>
         </div>
       </div>
     </main>
-    <section id="nosotros" class="nosotros">
-        <div>
-          <img
-            src="/img/Nosotros.jpg"
-            alt="Imagen sobre nosotros"
-            class="nosotros-img"
-          />
-        </div>
-        <div class="nosotros-content">
-          <h3>De artistas para artistas</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-            iure animi quae quisquam earum consequuntur nisi non adipisci!
-            Commodi, voluptates nobis? Sit, distinctio dicta quidem eius
-            architecto ipsam cumque enim.
-          </p>
+    <section id="nosotros" class="nosotros container">
+      <div>
+        <img
+          src="assets/img/Nosotros.jpg"
+          alt="Imagen sobre nosotros"
+          class="nosotros-img"
+        />
+      </div>
+      <h3>De artistas para artistas</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt iure
+        animi quae quisquam earum consequuntur nisi non adipisci! Commodi,
+        voluptates nobis? Sit, distinctio dicta quidem eius architecto ipsam
+        cumque enim.
+      </p>
     </section>
     <section id="contacto" class="contacto container">
       <form class="formulario">
-          <h3>Contactanos</h3>
-          <label for="nombre">Nombre</label>
-          <input id="nombre" type="text" placeholder="Ingrese su nombre">
+        <h3>Contactanos</h3>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" placeholder="Ingrese su nombre" />
 
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="correo@gmail.com">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="correo@gmail.com" />
 
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Dejanos un mensaje"></textarea>
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          cols="30"
+          rows="10"
+          placeholder="Dejanos un mensaje"
+        ></textarea>
 
-          <button class="boton" type="submit">Enviar</button>
+        <button class="boton" type="submit">Enviar</button>
       </form>
       <div>
-        <img src="/img/Formulario.svg" alt="Imagen de formulario" class="formulario-img">
+        <img
+          src="assets/img/Formulario.svg"
+          alt="Imagen de formulario"
+          class="formulario-img"
+        />
       </div>
     </section>
     <footer class="footer">
-      <p>Todos los derechos reservados &copy; <span class="texto-sec">Pintusis</span></p>
+      <div>
+        <p>Todos los derechos reservados &copy; Pintusis</p>
+      </div>
     </footer>
-    
+
     <!-- TYPED.JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- SCROLL  REVEAL-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- CUSTOM JS -->
-    <script src="/app.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
