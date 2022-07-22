@@ -455,7 +455,7 @@ textarea,
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: flex-start;
-  padding: 1rem;
+  padding: 2.9rem 0;
   row-gap: 2rem;
 }
 
@@ -465,7 +465,7 @@ textarea,
   }
 }
 
-.nav-cuenta {
+.navegacion.show.nav-cuenta .nav {
   justify-content: center;
   gap: 2rem;
 }
