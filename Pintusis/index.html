@@ -23,37 +23,41 @@
     </div>
     <nav class="navegacion">
       <ul class="nav">
-        <li><a href="index.html" class="texto-sec">Pintusis</a></li>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="cuenta.html">Cuenta</a></li>
+        <li><a href="index.html"><i class="fa-solid fa-p logo"></i></a></li>
+        <li><i class="fa-solid fa-house"></i><a href="#inicio">Inicio</a></li>
+        <li><i class="fa-solid fa-paint-roller"></i><a href="#productos">Productos</a></li>
+        <li><i class="fa-solid fa-users"></i><a href="#nosotros">Nosotros</a></li>
+        <li><i class="fa-solid fa-message"></i><a href="#contacto">Contacto</a></li>
+        <li><i class="fa-solid fa-address-book"></i><a href="cuenta.html">Cuenta</a></li>
         <button class="switch" id="switch">
           <span><i class="fa-solid fa-sun"></i></span>
           <span><i class="fa-solid fa-moon"></i></span>
         </button>
+        
       </ul>
     </nav>
     <header id="inicio" class="hero-content hero">
-      <h1>Pintusis</h1>
+      <div class="container">
+        <h1> Viví tu <br> vida a color</h1>
+        <p><span class="typed"></span><span class="pintusis">pintusis</span></p>
       <p class="hero-bg">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptate
         fugiat libero expedita nemo odio harum, provident molestiae! Pariatur
-        odit accusantium aspernatur maxime? Dolor soluta perspiciatis pariatur
-        asperiores, doloribus deleniti?
+        odit accusantium aspernatur maxime? Dolor soluta perspiciatis
       </p>
+      </div>
+      <i class="fa-solid fa-arrow-down"></i>
     </header>
     <main id="productos" class="productos">
       <h2>Productos</h2>
-      <div class="cards container">
+      <div class="cards">
         <div class="card">
           <h3>Cuadros</h3>
           <img src="/img/card1.jpg" alt="Imagen producto" />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div class="precio-flex">
             <p class="texto-tachado">$30</p>
-            <p><span class="texto-sec precio-oferta">$15</span></p>
+            <p><span class="precio-oferta">$15</span></p>
           </div>
         </div>
         <div class="card">
@@ -62,7 +66,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div class="precio-flex">
             <p class="texto-tachado">$30</p>
-            <p><span class="texto-sec precio-oferta">$15</span></p>
+            <p><span class=" precio-oferta">$15</span></p>
           </div>
         </div>
         <div class="card">
@@ -71,7 +75,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div class="precio-flex">
             <p class="texto-tachado">$30</p>
-            <p><span class="texto-sec precio-oferta">$15</span></p>
+            <p><span class=" precio-oferta">$15</span></p>
           </div>
         </div>
         <div class="card">
@@ -80,7 +84,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div class="precio-flex">
             <p class="texto-tachado">$30</p>
-            <p><span class="texto-sec precio-oferta">$15</span></p>
+            <p><span class=" precio-oferta">$15</span></p>
           </div>
         </div>
       </div>
@@ -124,6 +128,8 @@
       <p>Todos los derechos reservados &copy; <span class="texto-sec">Pintusis</span></p>
     </footer>
     
+    <!-- TYPED.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- SCROLL  REVEAL-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- CUSTOM JS -->
